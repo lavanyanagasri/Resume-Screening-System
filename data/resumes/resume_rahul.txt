@@ -1,0 +1,6 @@
+Rahul Sharma  
+Email: rahul@example.com  
+Skills: Java, SQL, HTML, CSS  
+Experience:  
+- Frontend web development  
+- Database maintenance using MySQL  

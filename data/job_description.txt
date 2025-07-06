@@ -1,0 +1,2 @@
+We are hiring a Data Scientist proficient in Python, scikit-learn, and data analysis.
+Must have strong experience with machine learning, NumPy, and pandas.

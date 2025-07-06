@@ -1,0 +1,6 @@
+Lavanya Naga Sri  
+Email: lavanya@example.com  
+Skills: Python, Data Science, Machine Learning, Pandas, NumPy, Scikit-learn  
+Experience:  
+- Worked on classification models using scikit-learn  
+- Built a recommendation system in Python  
