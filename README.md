@@ -37,21 +37,6 @@ A smart AI-powered tool that matches uploaded resumes with a job description and
 
 ---
 
-## 📁 Project Structure
-
-ResumeMatch-AI/
-├── app.py                 # Streamlit main app
-├── requirements.txt
-├── .streamlit/            # Optional: Streamlit theme/config
-├── src/
-│   ├── parser.py          # Resume file parsing
-│   ├── matcher.py         # Cosine similarity logic
-│   ├── utils.py           # Preprocessing and skill extraction
-│   └── feedback.py        # Gemini feedback generation
-├── data/
-│   └── resumes/           # Sample resumes
-└── .env                   # API keys (not pushed to GitHub)
-
 
 ---
 
@@ -77,14 +62,13 @@ GEMINI_API_KEY=your_key_here
 ```
 
 📥 Output
+
 Visual skill match chart
-
 Ranked resume match scores
-
 Resume feedback (if enabled)
-
 Downloadable CSV report
 
 👤 Author
 Lavanya Naga Sri
+
 💻 Full Stack & AI Enthusiast
