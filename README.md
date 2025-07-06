@@ -64,11 +64,15 @@ GEMINI_API_KEY=your_key_here
 📥 Output
 
 Visual skill match chart
+
 Ranked resume match scores
+
 Resume feedback (if enabled)
+
 Downloadable CSV report
 
 👤 Author
+
 Lavanya Naga Sri
 
 💻 Full Stack & AI Enthusiast
