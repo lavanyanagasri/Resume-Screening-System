@@ -40,15 +40,17 @@ A smart AI-powered tool that matches uploaded resumes with a job description and
 ## 📁 Project Structure
 
 ResumeMatch-AI/
-  ├── app.py                  # Streamlit main app
-  ├── requirements.txt
-  ├── .streamlit/             # Optional: theme config
-  ├── src/
-  │   ├── parser.py           # Resume file parsing
-  │   ├── matcher.py          # Cosine similarity logic
-  │   ├── utils.py            # Preprocessing, skill extraction
-  │   └── feedback.py         # Gemini feedback generation
-  └── data/resumes/           # Sample resumes
+├── app.py                 # Streamlit main app
+├── requirements.txt
+├── .streamlit/            # Optional: Streamlit theme/config
+├── src/
+│   ├── parser.py          # Resume file parsing
+│   ├── matcher.py         # Cosine similarity logic
+│   ├── utils.py           # Preprocessing and skill extraction
+│   └── feedback.py        # Gemini feedback generation
+├── data/
+│   └── resumes/           # Sample resumes
+└── .env                   # API keys (not pushed to GitHub)
 
 
 ---
@@ -61,6 +63,7 @@ ResumeMatch-AI/
 git clone https://github.com/your-username/ResumeMatch-AI.git
 cd ResumeMatch-AI
 
+```
 
 🤖 AI Resume Feedback
 You can optionally use Google Gemini to generate smart feedback for each resume.
@@ -69,7 +72,9 @@ How to Enable Gemini:
 Get your API key from: https://makersuite.google.com/app/apikey
 
 Add it to .env file:
+```bash
 GEMINI_API_KEY=your_key_here
+```
 
 📥 Output
 Visual skill match chart
