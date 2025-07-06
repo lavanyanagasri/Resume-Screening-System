@@ -1,62 +1,87 @@
-title: "🧠 ResumeMatch AI – Intelligent Resume Screener"
-description: >
-  A smart AI-powered tool that matches uploaded resumes with a job description and ranks them
-  based on skill and content similarity. Built using NLP, LLMs, and Streamlit for HR teams,
-  recruiters, and job-seeking platforms.
+# 🧠 ResumeMatch AI – Intelligent Resume Screener
 
-features:
-  - "📄 Upload multiple resumes (PDF, DOCX, TXT)"
-  - "🧠 Extracts text and key skills from resumes"
-  - "🎯 Matches resumes against a job description"
-  - "📊 Visual skill match analysis using bar charts"
-  - "🤖 Generates feedback using Gemini / LLMs (optional)"
-  - "📥 Download match results as a CSV"
+A smart AI-powered tool that matches uploaded resumes with a job description and ranks them based on skill and content similarity. Built using NLP, LLMs, and Streamlit for HR teams, recruiters, and job-seeking platforms.
 
-live_demo: "https://your-username-resume-screening-system.streamlit.app"
+---
 
-tech_stack:
-  - Streamlit
-  - nltk
-  - scikit-learn
-  - docx2txt
-  - PyPDF2
-  - pdfminer.six
-  - pandas
-  - google-generativeai
-  - python-dotenv
+## 🔍 Features
 
-project_structure: |
-  ResumeMatch-AI/
-  ├── app.py                  # Streamlit main app
-  ├── requirements.txt
-  ├── .streamlit/             # Optional: theme config
-  ├── src/
-  │   ├── parser.py           # Resume file parsing
-  │   ├── matcher.py          # Cosine similarity logic
-  │   ├── utils.py            # Preprocessing, skill extraction
-  │   └── feedback.py         # Gemini feedback generation
-  └── data/resumes/           # Sample resumes
+- 📄 Upload multiple resumes (PDF, DOCX, TXT)
+- 🧠 Extracts text and key skills from resumes
+- 🎯 Matches resumes against a job description
+- 📊 Visual skill match analysis using bar charts
+- 🤖 Generates AI-based resume feedback using Gemini (optional)
+- 📥 Download match results as a CSV file
 
-how_to_run:
-  - "Clone the repo"
-  - "cd ResumeMatch-AI"
-  - "pip install -r requirements.txt"
-  - "Create .env file (optional): GEMINI_API_KEY=your_key_here"
-  - "streamlit run app.py"
+---
 
-gemini_feedback:
-  description: >
-    If you want AI-based resume feedback, use a Google Gemini API key. 
-    Store it in a .env file locally or as a secret in Streamlit Cloud.
-  link: "https://makersuite.google.com/app/apikey"
+## 🚀 Live Demo
 
-output:
-  - "📊 Skill Match Bar Chart"
-  - "📥 Downloadable CSV with Match Scores"
-  - "🤖 Optional LLM-powered Resume Feedback"
+🔗 [Click here to open the deployed app](https://your-username-resume-screening-system.streamlit.app)
 
-author:
-  name: "Lavanya Naga Sri"
-  role: "Passionate developer building AI tools to empower hiring and job applications."
+---
 
-license: "MIT License – use freely with credit 🌱"
+## 🛠️ Tech Stack
+
+| Tool / Library         | Purpose                             |
+|------------------------|-------------------------------------|
+| Streamlit              | Web UI frontend                     |
+| Python                 | Backend logic                       |
+| NLTK                   | Text preprocessing                  |
+| scikit-learn           | Cosine similarity & ML utilities    |
+| docx2txt, PyPDF2       | Resume parsing (.docx/.pdf)         |
+| pdfminer.six           | Advanced PDF parsing                |
+| pandas                 | Data processing                     |
+| google-generativeai    | Gemini LLM feedback generation      |
+| python-dotenv          | Local API key management (.env)     |
+
+---
+
+## 📁 Project Structure
+
+ResumeMatch-AI/
+├── app.py # Streamlit app
+├── requirements.txt
+├── .streamlit/ # Optional Streamlit config
+├── data/
+│ └── resumes/ # Resume text files
+├── src/
+│ ├── parser.py # Resume parsing (PDF/DOCX)
+│ ├── matcher.py # Cosine similarity logic
+│ ├── utils.py # Preprocessing & skill extraction
+│ └── feedback.py # Gemini resume feedback (LLM)
+└── .env # (not committed) Gemini API key
+
+
+---
+
+## 🧑‍💻 Run Locally
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/ResumeMatch-AI.git
+cd ResumeMatch-AI
+
+
+🤖 AI Resume Feedback
+You can optionally use Google Gemini to generate smart feedback for each resume.
+
+How to Enable Gemini:
+Get your API key from: https://makersuite.google.com/app/apikey
+
+Add it to .env file:
+GEMINI_API_KEY=your_key_here
+
+📥 Output
+Visual skill match chart
+
+Ranked resume match scores
+
+Resume feedback (if enabled)
+
+Downloadable CSV report
+
+👤 Author
+Lavanya Naga Sri
+💻 Full Stack & AI Enthusiast
